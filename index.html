@@ -12,40 +12,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-        <title>Bootstrap Example</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="landingpage.css">
-        <title>Company Landing Page</title>
+        <title>ACME Corporation</title>
     </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="" alt="Logo" width="100px" height="100px"></a>
+                  <a class="navbar-brand" href="#"><img src="Acme-corp.webp" alt="Logo" width="100px" height="100px"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#learning">Learning</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#services">Services</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
+                          Other Offerings
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="https://media.wired.com/photos/61bbe60470540627801a5b3f/master/pass/Science_Wileecoyote_B7YECA.jpg">Cooking</a></li>
+                          <li><a class="dropdown-item" href="https://dyn1.heritagestatic.com/lf?set=path%5B1%2F1%2F9%2F4%2F3%2F11943546%5D&call=url%5Bfile%3Aproduct.chain%5D">Engineering</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Chemistry</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Another Link</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Alert Medics</a>
                       </li>
                     </ul>
                     <form class="d-flex">
@@ -58,16 +57,21 @@
         </header>
         <main>
             <!-- Hero Section -->
-            <section class="hero">
+            <section class="hero" id="learning">
               <div class="container mt-5">
                 <div class="row">
-                  <div class="px-4 pt-5 my-5 text-center border-bottom">
-                    <h1 class="display-4 fw-bold">Centered screenshot</h1>
-                    <div class="col-lg-6 mx-auto">
-                      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                  <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                      <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="acme3.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                      </div>
+                      <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">ACME School of Coding</h1>
+                        <p class="lead">You too can learn how to code. It's so easy, a Manager could do it... perhaps, even a People Leader.  Before you know it, AI will be doing it all for us.  It's just that easy!</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                          <a href="https://fifetli.blog/wp-content/uploads/2019/01/screen-shot-2019-01-15-at-8.26.48-am.png?w=640>" class="btn btn-primary btn-lg px-4 me-md-2" role="button">More</a>
+                          <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncerqksvwjSO2Vythq9BujKTMP5m-pb1Tkw&s" class="btn btn-primary btn-lg px-4 me-md-2" role="button">Hard No</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -75,77 +79,88 @@
               </div>
             </section>
             <!-- Card/Services Section --> 
-            <section class="services">
+            <section class="services" id="services">
               <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
                         <!-- card: This class creates a flexible and extensible content container. It acts as the main wrapper for the card component, providing styling and structure for the card’s content. -->
-                            <img src="" class="card-img-top" alt="Logo">
+                            <img src="catalog.webp" class="card-img-top" alt="Logo">
                             <!-- card-img-top: This class is applied to the image within the card. It styles the image to be displayed at the top of the card and ensures it is responsive, adapting to the card’s width. -->
                             <div class="card-body">
                             <!-- card-body: This class wraps the main content of the card, including the title, text, and buttons. It provides appropriate padding and styling to ensure the content is well-organized and visually appealing. -->
-                              <h5 class="card-title">First</h5>
+                              <h5 class="card-title">Catalog of Courses</h5>
                               <!-- card-title: This class styles the title of the card, typically used for headings. It applies specific font styles and sizes to make the title stand out. -->
-                              <p class="card-text">Information about the first section.</p>
+                              <p class="card-text">Learn more about what we have to offer.</p>
                               <!-- card-text: This class styles the text content of the card, providing default styling for paragraphs or descriptions, ensuring consistency and readability. -->
-                              <a href="#" class="btn btn-primary">More Details...</a>
+                              <a href="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A4e595518-e466-11e9-b8e0-026e07cbe5b4?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1" class="btn btn-primary">Course Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
-                            <img src="" class="card-img-top" alt="Logo">
-                            <div class="card-body">
-                              <h5 class="card-title">Second</h5>
-                              <p class="card-text">Informaiton about the second section.</p>
-                              <a href="#" class="btn btn-primary">More Details...</a>
-                            </div>
+                      <div class="card">
+                        <img src="speak.jpeg" class="card-img-top" alt="Logo">
+                        <div class="card-body">
+                          <h5 class="card-title">Speak to a Client</h5>
+                          <p class="card-text">Talk to a resident expert.</p>
+                          <a href="https://jonathanrosenbaum.net/wp-content/uploads/2012/06/wile-e-coyote-help.jpg" class="btn btn-primary">Chat Here</a>
                         </div>
+                      </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
-                            <img src="" class="card-img-top" alt="Logo">
-                            <div class="card-body">
-                              <h5 class="card-title">Third</h5>
-                              <p class="card-text">Information about the third section.</p>
-                              <a href="#" class="btn btn-primary">More Details...</a>
-                            </div>
+                      <div class="card">
+                        <img src="wrong.jpg" class="card-img-top" alt="Logo">
+                        <div class="card-body">
+                          <h5 class="card-title">What Could Go Wrong?</h5>
+                          <p class="card-text">It's easy they said. What's the worst that could happen???</p>
+                          <a href="https://www.youtube.com/watch?v=Gq_bjaI0NTo" class="btn btn-primary">Try It</a>
                         </div>
-
-                </div>
+                      </div>
+                    </div>
               </div>
             </section>
             <!-- Carousel/About Section -->
             <section class="about">
               <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                <div class="bd-example">
+                  <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="outline.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-black bg-light">Wile E Coyote</h5>
+                          <p class="text-black bg-light">Based on Mark Twain's book <i>Roughing It</i>.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Fast_and_FurryousTitle.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-black bg-light">Fast and Furry-ous</h5>
+                          <p class="text-black bg-light">Released on September 17, 1949.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/There_They_Go-Go-Go%21_%28screencap%29.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-black bg-light">Always Try</h5>
+                          <p class="text-black bg-light">Sometimes, you just can't win.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Company Info</text></svg>
-                    </div>
-                    <div class="carousel-item">
-                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Company History 1</text></svg>
-                    </div>
-                    <div class="carousel-item">
-                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Company History 2</text></svg>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                  
                 </div>
               </div>
             </section>
